@@ -1,3 +1,5 @@
+
+
 import { Link } from 'react-router-dom'
 import { ReactComponent as DeleteIcon } from '../assets/svg/deleteIcon.svg'
 import { ReactComponent as EditIcon } from '../assets/svg/editIcon.svg'
@@ -5,8 +7,6 @@ import bedIcon from '../assets/svg/bedIcon.svg'
 import bathtubIcon from '../assets/svg/bathtubIcon.svg'
 
 function ListingItem({ listing, id, onEdit, onDelete }) {
-
-    console.log(listing)
     return (
         <li className='categoryListing'>
             <Link
@@ -14,7 +14,7 @@ function ListingItem({ listing, id, onEdit, onDelete }) {
                 className='categoryListingLink'
             >
                 <img
-                    src={listing.imageUrls[0]}
+                    src={listing.imgUrls[0]}
                     alt={listing.name}
                     className='categoryListingImg'
                 />
