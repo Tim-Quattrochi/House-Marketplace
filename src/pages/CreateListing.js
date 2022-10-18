@@ -3,7 +3,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
 import Spinner from '../components/Spinner'
 import { toast } from 'react-toastify'
-const API_KEY = 'AIzaSyBa_atH8shmp_lUg09bOJpECLAMu5837QM'
+
 
 function CreateListing() {
     const [geolocationEnabled, setGeoLocationEnabled] = useState(true)
